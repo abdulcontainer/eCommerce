@@ -16,18 +16,18 @@ class ProductSeeder extends Seeder
     {
         DB::table('products')->insert([
             [
-                "name"=>"Oppo",
-                "price"=>"50000",
-                "category"=>"mobile",
-                "description"=>"Oppo mobile",
-                "gallery"=>"https://www.pakmobizone.pk/mobile-phone/oppo-a16-pearl-blue-32gb-3gb/"
+                "name"=>"Iphone 13",
+                "price"=>"250000",
+                "category"=>"Mobile",
+                "description"=>"Iphone with 3 cameras.",
+                "gallery"=>"https://www.lg.com/in/mobile-phones/lg-lmf100emw-wing-5g#none"
                 ],
             [
-            "name"=>"Oppo",
-            "price"=>"50000",
-            "category"=>"mobile",
-            "description"=>"Oppo mobile",
-            "gallery"=>"https://www.pakmobizone.pk/mobile-phone/oppo-a16-pearl-blue-32gb-3gb/"
+                "name"=>"Oppo",
+                "price"=>"50000",
+                "category"=>"Mobile",
+                "description"=>"Oppo mobile",
+                "gallery"=>"https://www.pakmobizone.pk/mobile-phone/oppo-a16-pearl-blue-32gb-3gb/"
                 ],
             [
                 "name"=>"LED",
