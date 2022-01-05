@@ -16,26 +16,33 @@ class ProductSeeder extends Seeder
     {
         DB::table('products')->insert([
             [
+                "name"=>"Oppo",
+                "price"=>"50000",
+                "category"=>"mobile",
+                "description"=>"Oppo mobile",
+                "gallery"=>"https://www.pakmobizone.pk/mobile-phone/oppo-a16-pearl-blue-32gb-3gb/"
+                ],
+            [
             "name"=>"Oppo",
             "price"=>"50000",
-            "category"=>"Mobile",
+            "category"=>"mobile",
             "description"=>"Oppo mobile",
             "gallery"=>"https://www.pakmobizone.pk/mobile-phone/oppo-a16-pearl-blue-32gb-3gb/"
-            ],
+                ],
             [
-                "name"=>"Samsung",
+                "name"=>"LED",
                 "price"=>"32000",
-                "category"=>"Mobile",
-                "description"=>"Samsung mobile",
-                "gallery"=>"https://www.samsung.com/pk/smartphones/galaxy-z-fold2/"
-            ],
+                "category"=>"tv",
+                "description"=>"Led tv 16 colors with 4k supportive",
+                "gallery"=>"https://www.google.com/search?q=lcd&sxsrf=AOaemvLL61AUyRNIDrBJtnk5xJ3nRmgYwA:1641410811356&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjzg93iq5v1AhVT5uAKHZyVBgUQ_AUoAXoECAkQAw&biw=1366&bih=625&dpr=1#imgrc=LojOWcb_P7QYmM"
+                ],
             [
-                "name"=>"Xiaomi",
+                "name"=>"Dawlance",
                 "price"=>"70999",
-                "category"=>"Mobile",
-                "description"=>"Xiaomi mobile",
-                "gallery"=>"https://www.google.com/search?q=xiaomi+redmi+note+10&sxsrf=AOaemvIutSczN1rUwvInbgopzhmp_aZj6g:1641410713757&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiPkZi0q5v1AhWfBmMBHRm9CQUQ_AUoAXoECAEQAw&biw=1366&bih=625&dpr=1#imgrc=LJBUDz8hbXArzM"
-            ],      
+                "category"=>"fridge",
+                "description"=>"a fridge with much more features",
+                "gallery"=>"https://www.google.com/search?q=dawlance+fridge&sxsrf=AOaemvLS-EOOmS80_xs1zANHCRyrzFfnTA:1641410985389&source=lnms&tbm=isch&sa=X&ved=2ahUKEwian9u1rJv1AhWD5-AKHRCBBXcQ_AUoAXoECAIQAw&biw=1366&bih=625&dpr=1#imgrc=hTt_K40cunXMeM"
+                ],      
         ]);
     }
 }
