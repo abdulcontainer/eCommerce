@@ -14,3 +14,7 @@ Route::get('search',[ProductController::class,'search']);
 Route::post('add-to-cart',[ProductController::class,'addToCart'])->name('add-to-cart');
 // Logout
 Route::get('logout',[UserController::class,'logout'])->name('logout');
+// CartList
+Route::get('cart-list',[ProductController::class,'cartList'])->name('cart-list');
+// Remove Cart
+Route::get('remove-cart/{id}',[ProductController::class,'removeCart'])->name('remove-cart');
