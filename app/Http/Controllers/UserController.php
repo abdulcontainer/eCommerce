@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
+use Session;
 
 class UserController extends Controller
 {
@@ -14,8 +15,13 @@ class UserController extends Controller
         {
             return "Username Or Password is not matched";
         }else{
-            $req->session()->put('user','$user');
+            $req->session()->put('user',$user);
             return redirect('/');
         }
+    }
+    // Logout
+    function logout(){
+        Session::forget('user');
+        return redirect('login');
     }
 }
