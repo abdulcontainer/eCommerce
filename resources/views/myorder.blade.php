@@ -4,10 +4,10 @@
     <!--Trending Products-->
     <div class="col-md-12 list">
         <div class="trending-product">
-            <h3>Cart List</h3>
-            <a href="order-now" class="btn btn-success">Order Now</a> <br><br>
+            <h3>Orders List</h3>
+            
             <div class="">
-                @foreach ($products as $item)
+                @foreach ($orders as $item)
                 <div class="row searched-item cart-list-devider">
                   <div class="col-lg-4">
                     <a href="detail/{{$item->id}}">
@@ -17,16 +17,20 @@
                   <div class="col-lg-4">
                     <div class="">
                         <h3>{{$item->name}}</h3>
-                        <h5>{{$item->description}}</h5>
+                        <h5>Delivery Status: {{$item->status}}</h5>
+                        <h5>Payment Status: {{$item->payment_status}}</h5>
+                        <h5>Payment Method: {{$item->payment_method}}</h5>
+                        <h5>Delivery Address: {{$item->address}}</h5>
+                        <h5>Price: {{$item->price}}</h5>
                     </div>
                   </div>
                   <div class="col-lg-4">
-                    <a href="remove-cart/{{$item->cart_id}}" class="btn btn-warning">Remove from Cart</a>
+                    
                   </div>
                 </div>
                 @endforeach
             </div>
-            <a href="order-now" class="btn btn-success">Order Now</a> <br><br>
+            
         </div>
     </div>
 </div>
